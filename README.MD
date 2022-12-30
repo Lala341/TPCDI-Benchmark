@@ -16,48 +16,48 @@ This implementation was developed in the section of the TPC-DI notebook.
 
 This stage involves: 
 
-Data is cleaned from previous runs. 
+- Data is cleaned from previous runs. 
 
-Data warehouse schema is created. 
+- Data warehouse schema is created. 
 
-Helper functions to process data are created.
+- Helper functions to process data are created.
 
 
 ### Step 2: Historical Load 
 
-The Data Warehouse is populated with data. 
+- The Data Warehouse is populated with data. 
 
-Transformations are applied as described in clause 4.5 of the TPC-DI manual (batch1 folder on the generated data). 
+- Transformations are applied as described in clause 4.5 of the TPC-DI manual (batch1 folder on the generated data). 
 
-Validations are being performed based on clause 7.4. 
+- Validations are being performed based on clause 7.4. 
 
-Upon completion of the validation stage, a phase completion record is written into DIMessages table. 
+- Upon completion of the validation stage, a phase completion record is written into DIMessages table. 
 
-Measuring the time of this step. 
+- Measuring the time of this step. 
 
 
 ### Step 3: Incremental Update 1 
 
-The Data Warehouse is populated with data. 
+- The Data Warehouse is populated with data. 
 
-Transformations are applied as described in clause 4.5 of the TPC-DI manual (batch2 folder on the generated data). 
+- Transformations are applied as described in clause 4.5 of the TPC-DI manual (batch2 folder on the generated data). 
 
-Validations are being performed based on clause 7.4 
+- Validations are being performed based on clause 7.4 
 
-Upon completion of the validation stage, a phase completion record is written into DIMessages table. 
+- Upon completion of the validation stage, a phase completion record is written into DIMessages table. 
 
-Measuring the time of this step. 
+- Measuring the time of this step. 
 
  
  ### Step 4: Incremental Update 2 
 
- The Data Warehouse is populated with data. 
+- The Data Warehouse is populated with data. 
 
-Transformations are applied as described in clause 4.6 of the TPC-DI manual (batch3 folder on the generated data). 
+- Transformations are applied as described in clause 4.6 of the TPC-DI manual (batch3 folder on the generated data). 
 
-Validations are being performed based on clause 7.4 
+- Validations are being performed based on clause 7.4 
 
-Upon completion of the validation stage, a phase completion record is written into DIMessages table. 
+- Upon completion of the validation stage, a phase completion record is written into DIMessages table. 
 
-Measuring the time of this step.
+- Measuring the time of this step.
 
